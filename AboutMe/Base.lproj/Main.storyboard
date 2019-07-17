@@ -19,35 +19,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tVX-49-zZU">
-                                <rect key="frame" x="20" y="58" width="50" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="20" y="58" width="53.5" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XlS-nA-pxT">
-                                <rect key="frame" x="78" y="58" width="42" height="21"/>
+                                <rect key="frame" x="81.5" y="58" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hobbies: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7d-y4-cvn">
-                                <rect key="frame" x="20" y="87" width="73" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="20" y="87" width="77.5" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YQ-aO-3e7">
-                                <rect key="frame" x="101" y="87" width="42" height="21"/>
+                                <rect key="frame" x="105.5" y="87" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTb-yq-WVY">
+                                <rect key="frame" x="144.5" y="807" width="125" height="30"/>
+                                <state key="normal" title="Introduce Yourself"/>
+                                <connections>
+                                    <action selector="introduceSelfButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Rv-cG-HSd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uTb-yq-WVY" secondAttribute="bottom" constant="25" id="3J6-aK-a3D"/>
                             <constraint firstItem="XlS-nA-pxT" firstAttribute="leading" secondItem="tVX-49-zZU" secondAttribute="trailing" constant="8" symbolic="YES" id="3qf-YV-mYU"/>
                             <constraint firstItem="tVX-49-zZU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="4dL-NG-QCC"/>
                             <constraint firstItem="tVX-49-zZU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FYq-gA-5Tv"/>
+                            <constraint firstItem="uTb-yq-WVY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LN6-nB-1YW"/>
                             <constraint firstItem="8YQ-aO-3e7" firstAttribute="leading" secondItem="R7d-y4-cvn" secondAttribute="trailing" constant="8" symbolic="YES" id="TqX-IU-n86"/>
                             <constraint firstItem="tVX-49-zZU" firstAttribute="baseline" secondItem="XlS-nA-pxT" secondAttribute="baseline" id="ZYZ-w3-v0k"/>
                             <constraint firstItem="tVX-49-zZU" firstAttribute="leading" secondItem="R7d-y4-cvn" secondAttribute="leading" id="e4e-m8-Yju"/>
